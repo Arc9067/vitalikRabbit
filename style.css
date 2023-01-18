@@ -1,0 +1,181 @@
+/* goggle font */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Roboto&display=swap");
+/* variable */
+:root {
+  --clr-primary: #cc8f75;
+  --clr-secondary: #2f1d20;
+  --clr-light: #835040;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --tran: linear 0.3s;
+  --libre: "Libre Franklin", sans-serif;
+  --bold: 700;
+  --light: 400;
+  --roboto: "Roboto", sans-serif;
+  --mpadding: 0.5rem;
+  --radius: 7px;
+  --max: 1200px;
+  --spacing: 0.5rem;
+}
+
+/* virables ends here */
+/* default styling */
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* default styling ends here */
+/* general styling */
+.btn {
+  padding: 0.5rem;
+  background-color: var(--clr-black);
+  border-radius: 8px;
+  transition: var(--tran);
+  outline: none;
+  border: none;
+}
+
+.toggle i {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--clr-white);
+}
+
+a:hover {
+  color: inherit;
+}
+
+h2,
+h3 {
+  font-family: var(--libre);
+  font-weight: var(--bold);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.836);
+}
+
+/* general styling ends here */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/imageedit_1_6687414808.jpg);
+  background-color: #2f1d20;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: var(--libre);
+  font-weight: var(--light);
+  color: var(--clr-white);
+  line-height: 1.5;
+  font-size: 1.35em;
+  /* height: 100%; */
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.dblock {
+  display: block !important;
+}
+
+#nav {
+  background-color: #835040;
+  z-index: 10000000000 !important;
+  box-shadow: -15px -1px 42px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -15px -1px 42px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px -1px 42px -16px rgba(0, 0, 0, 0.75);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+}
+#nav .container .header {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#nav .container .header .nav-logo {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+#nav .container .header .nav-logo h2 {
+  font-weight: var(--bold);
+  justify-self: center;
+  color: var(--clr-white);
+}
+#nav .container .header .nav-ul {
+  display: grid;
+}
+#nav .container .header .nav-ul i {
+  font-size: 2em;
+  justify-self: end;
+  color: var(--clr-white);
+}
+#nav .container .header .nav-links {
+  grid-column: 1/3;
+  display: grid;
+  place-items: center;
+  display: none;
+}
+#nav .container .header .nav-links ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+#nav .container .header .nav-links ul li {
+  padding: 0.8rem;
+}
+#nav .container .header .nav-links ul li a {
+  color: #fff;
+}
+
+#fullpage {
+  min-height: 100vh;
+}
+#fullpage .container .row {
+  overflow: hidden;
+}
+#fullpage .container .row .homeimg {
+  display: grid;
+  place-items: center;
+  display: none !important;
+}
+#fullpage .container .row .homeimg img {
+  height: 12rem;
+}
+#fullpage .container .row .home-txt h2 {
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-weight: var(--bold);
+}
+#fullpage .container .row .home-txt p {
+  color: var(--clr-white);
+}
+#fullpage .container .row .home-txt button {
+  background-color: transparent;
+  border: 1px solid #cc8f75;
+  color: #fff;
+}
+#fullpage .container .row .home-txt button a {
+  color: #fff !important;
+}
+
+.section2 {
+  background-color: var(--clr-black);
+}/*# sourceMappingURL=style.css.map */
