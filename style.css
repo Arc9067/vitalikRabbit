@@ -177,5 +177,28 @@ body {
 }
 
 .section2 {
-  background-color: var(--clr-black);
+  background: radial-gradient(circle, rgb(131, 80, 64) 0%, rgb(47, 29, 32) 100%);
+}
+.section2 .row .title {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-weight: var(--bold);
+}
+.section2 .row .row {
+  display: grid;
+  place-items: center;
+}
+.section2 .row .row .col-sm-10 {
+  background-color: #2f1d20;
+  width: 10rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.section2 .row .row .col-sm-10 h3 {
+  color: #fff;
+}
+.section2 .row .row .col-sm-10 p {
+  color: lightgray;
 }/*# sourceMappingURL=style.css.map */
